@@ -8,12 +8,12 @@
 
 const solution = (input1, input2, input3) => {
   if ((input1 >= input2) && (input1 >= input3)) {
-    return input1;
+  return input1;
   }
   if (input2 > input3) {
-    return input2;
+  return input2;
   }
-    return input3;
+  return input3;
 };
 
 module.exports = {
