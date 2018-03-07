@@ -12,10 +12,10 @@ const solution = (input1, input2, input3) => {
   }
   if (input2 > input3) {
     return input2;
-  } else {
-    return input3;
   }
+    return input3;
 };
+
 module.exports = {
   solution,
 };
