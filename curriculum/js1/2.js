@@ -8,22 +8,22 @@
 
 const solution = (input1, input2, input3) => {
 
-  var maximum = input1;
+ 
     
     if ((input1 >= input2) && (input1 >= input3)) {
           
-          return maximum; 
+          return input1; 
           
         } else if (input2 > input3){
               
-                maximum = input2;
-                return maximum;
+               
+                return input2;
               
               
             } else {
                   
-                  maximum = input3;
-                  return maximum;
+                 
+                  return input3;
                   
                 }
 };
@@ -31,3 +31,4 @@ const solution = (input1, input2, input3) => {
 module.exports = {
   solution,
 };
+
