@@ -7,14 +7,11 @@
  * @returns {string}
  */
 
-const solution = (num) => {
+const solution = (num, output = '') => {
   if (num === 0) {
-    return '';
-  }
-  if (num === 1) {
-    return 'hello';
-  }
-  return 'hello' + solution(num-1);
+    return output;
+ }
+  return solution(num-1, 'hello'+ output);
 };
 module.exports = {
   solution,
