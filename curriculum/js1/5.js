@@ -6,7 +6,11 @@
  */
 
 const solution = (a, b) => {
-  return 0;
+  if (a ===0) {
+    return 'the function call is completed';
+  }
+  b();
+  return solution(a-1, b);
 };
 
 module.exports = {
