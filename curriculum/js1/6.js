@@ -5,8 +5,15 @@
  * @returns {number}
  */
 
-const solution = (a) => {
-  return 0;
+const solution = (a, possibleDivisor = a -1, sum = 0) => {
+  if (possibleDivisor === 1) {
+    return sum;
+  }
+  if (a % possibleDivisor === 0) {
+    sum = sum + possibleDivisor;
+  }
+  possibleDivisor = possibleDivisor - 1;
+  return solution(a, possibleDivisor, sum);
 };
 
 module.exports = {
