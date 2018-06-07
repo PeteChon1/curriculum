@@ -11,7 +11,7 @@ const solution = (a, b, c) => {
   a = a*1000;
   b = b*1000;
   setTimeout(c, a);
-  setTimeout(c, b);
+  setTimeout(c, a + b);
 };
 
 module.exports = {
