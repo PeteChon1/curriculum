@@ -6,10 +6,17 @@
  * @returns {boolean}
  */
 
-const solution = (a, b, c) => {
-  return 0;
+const solution = (input1, input2, input3) => {
+  if ((input1 >= input2) && (input1 >= input3)) {
+   return input1;
+  }
+  if (input2 > input3) {
+   return input2;
+  }
+  return input3;
 };
 
 module.exports = {
   solution,
 };
+
